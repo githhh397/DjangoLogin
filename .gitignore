@@ -1,0 +1,71 @@
+# *************************
+# Python 和 Django 项目通用 .gitignore 文件
+# *************************
+
+# 虚拟环境 - 忽略所有常见的虚拟环境文件夹名称
+venv/
+ENV/
+env/
+.venv/
+
+# Python 编译文件和缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 数据库文件 - 忽略本地开发数据库（如 SQLite）
+*.sqlite3
+*.db
+
+# Django 生成的文件
+*.log
+local_settings.py
+db.sqlite3
+mediafiles/
+staticfiles/
+
+# 环境变量文件 - 永远不要上传包含密码和密钥的文件！
+.env
+.env.local
+.env.production
+.env.test
+
+# 编辑器和IDE配置文件
+.vscode/
+.idea/
+.ropeproject
+.project
+.pydevproject
+.settings/
+
+# 操作系统生成的文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 日志文件
+logs/
